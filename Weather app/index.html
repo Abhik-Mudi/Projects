@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="alert search-box hidden">
+            <button onclick="closealert()">OK</button>
+        </div>
+            <div class="search-box">
+                <input type="text" id="location" placeholder="Enter city">
+                <button onclick="getWeather()" id="search-btn" disabled>🔍</button>
+            </div>
+            <div id="weather-card" class="hidden">
+                <h2 id="city-name"></h2>
+                <img style="filter:invert(1)" id="weather-icon" src="" alt="Weather Icon">
+                <div>
+                    <p id="temperature"></p>
+                    <p id="weather-description"></p>
+                    <p id="humidity"></p>
+                </div>
+                <!-- <p id="wind"></p> -->
+                <button id="view-more" class="view-more-btn">View More</button>
+            </div>
+        </div>
+        <div>
+            <button onclick="goto()" class="signin-btn" id="signin">Sign In</button>
+            <button class="hidden signin-btn" id="logout">Log Out</button>
+        </div>
+    
+    <script src="script.js"></script>
+    <script src="signin.js" type="module"></script>
+    <script src="signup.js" type="module"></script>
+</body>
+
+</html>

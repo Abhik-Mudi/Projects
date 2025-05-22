@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="detcontainer">
+        <h1>Weather Details</h1>
+        <h2 id="city-name"></h2>
+        <img style="filter:invert(1)" id="weather-icon" src="" alt="Weather Icon">
+        <div class="weatherinfo">
+            <p id="temperature"></p>
+            <p id="weather-description"></p>
+            <p id="humidity"></p>
+            <p id="wind-speed"></p>
+            <p id="pressure"></p>
+            <p id="feels-like"></p>
+            <p id="visibility"></p>
+        </div>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+    <script src="details.js"></script>
+</body>
+</html>
